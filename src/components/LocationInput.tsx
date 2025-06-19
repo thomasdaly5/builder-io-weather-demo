@@ -4,6 +4,7 @@ import FormField from "@cloudscape-design/components/form-field";
 import Input from "@cloudscape-design/components/input";
 import SpaceBetween from "@cloudscape-design/components/space-between";
 import { MapPin, Search } from "lucide-react";
+import { MajorCitiesWeather } from "./MajorCitiesWeather";
 
 interface LocationInputProps {
   onLocationSubmit: (zipCode: string) => void;
