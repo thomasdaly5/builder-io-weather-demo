@@ -33,7 +33,7 @@ echo "📝 Testing API key: ${API_KEY:0:8}..."
 
 # Test API call
 echo "🌐 Making test API call..."
-RESPONSE=$(curl -s "https://api.openweathermap.org/data/2.5/weather?q=New York&appid=$API_KEY&units=imperial")
+RESPONSE=$(curl -s "https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=$API_KEY&units=imperial")
 
 # Check if response contains error
 if echo "$RESPONSE" | grep -q '"cod":401'; then
