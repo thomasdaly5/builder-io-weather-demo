@@ -77,14 +77,18 @@ const WeatherDashboard: React.FC = () => {
               </Header>
             }
           >
-            <div className="min-h-[60vh] flex items-center justify-center">
-              <LocationInput
-                onLocationSubmit={handleLocationSubmit}
-                isLoading={isLoading}
-                error={
-                  isError && error instanceof Error ? error.message : undefined
-                }
-              />
+            <div className="min-h-[60vh] flex items-center justify-center py-8">
+              <div className="w-full max-w-7xl px-4">
+                <LocationInput
+                  onLocationSubmit={handleLocationSubmit}
+                  isLoading={isLoading}
+                  error={
+                    isError && error instanceof Error
+                      ? error.message
+                      : undefined
+                  }
+                />
+              </div>
             </div>
           </ContentLayout>
         }
